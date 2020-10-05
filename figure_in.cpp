@@ -1,0 +1,31 @@
+#include <fstream>
+#include <iostream>
+
+#include "parallelepiped.h"
+#include "sphere.h"
+
+using namespace std;
+
+namespace namesp {
+
+    figure *figure::inGlobal(ifstream &ifstr) {
+        figure *element;
+        char data[255];
+        if (!ifstr.eof()) ifstr.get();
+        ifstr.getline(data, 255);
+        if (std::string(data) == "1") {
+            element = new sphere;
+            element->type = mType::SPHERE;
+        } else if (std::string(data) == "2") {
+            element = new parallelepiped;
+            element->type = mType::PARALLELEPIPED;
+        } else {
+            delete element;
+            cout << "Error!" << endl;
+            return nullptr;
+        }
+        element->in(ifstr);
+        ifstr >> element->density;
+        return element;
+    }
+}
