@@ -12,9 +12,9 @@ namespace namesp {
         virtual void in(ifstream &ifstr) = 0;
         void outGlobal(ofstream &ofstr);
         static figure *inGlobal(ifstream &ifstr);
+        mType type; // Тип объекта
     private:
         int density;
-        mType type; // Тип объекта
     };
 }
 

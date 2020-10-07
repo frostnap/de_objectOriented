@@ -4,6 +4,7 @@
 namespace namesp {
 
     enum mType {
+        NONE = -1,
         SPHERE = 0,
         PARALLELEPIPED = 1
     };

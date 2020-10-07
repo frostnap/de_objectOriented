@@ -9,7 +9,7 @@ using namespace std;
 namespace namesp {
     class container {
     public:
-        void out(ofstream &ofstr);
+        void out(ofstream &ofstr, mType ignore = mType::NONE);
         void in(ifstream &ifstr);
         int hashLinear(int index);
         int hashAdd(int typeKey);
