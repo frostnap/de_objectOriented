@@ -14,6 +14,7 @@ namespace namesp {
         static figure *inGlobal(ifstream &ifstr);
     private:
         int density;
+        int temperatureOfMelting;
         mType type; // Тип объекта
     };
 }
