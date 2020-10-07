@@ -7,6 +7,7 @@ namespace namesp {
     void figure::outGlobal(ofstream &ofstr) {
         out(ofstr);
         ofstr << "density=" << density << ";";
+        ofstr << "V=" << function() << ";";
     }
 
 }
