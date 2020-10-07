@@ -8,7 +8,7 @@ namespace namesp {
                 if(hash[i+j*namesp::container::q].data == nullptr) // Прекращение поиска
                     break;
                 ofstr << "Table index: " << i+j*namesp::container::q << ". ";
-                ((figure*)hash[i+j*namesp::container::q].data)->out(ofstr);
+                ((figure*)hash[i+j*namesp::container::q].data)->outGlobal(ofstr);
                 ofstr << endl;
             }
         }
