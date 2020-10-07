@@ -26,6 +26,7 @@ int main(int argc, char* argv[]) {
     namesp::container c;
     // Считывание из файла
     c.in(ifst);
+    c.sort();
     // Вывод в файл
     c.out(ofst);
     cout << "Program ended"<< endl;

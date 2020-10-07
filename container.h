@@ -11,6 +11,7 @@ namespace namesp {
     public:
         void out(ofstream &ofstr);
         void in(ifstream &ifstr);
+        void sort();
         int hashLinear(int index);
         int hashAdd(int typeKey);
         static const int MAXSIZE = 1024;
