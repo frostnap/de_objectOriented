@@ -30,6 +30,7 @@ namespace namesp {
         }
         element->in(ifstr);
         ifstr >> element->density;
+        ifstr >> element->temperatureOfMelting;
         return element;
     }
 }
