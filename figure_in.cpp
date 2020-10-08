@@ -3,6 +3,7 @@
 
 #include "parallelepiped.h"
 #include "sphere.h"
+#include "tetraedr.h"
 
 using namespace std;
 
@@ -19,6 +20,9 @@ namespace namesp {
         } else if (std::string(data) == "2") {
             element = new parallelepiped;
             element->type = mType::PARALLELEPIPED;
+        } else if (std::string(data) == "3") {
+            element = new tetraedr;
+            element->type = mType::TETRAEDR;
         } else {
             delete element;
             cout << "Error!" << endl;
