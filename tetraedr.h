@@ -7,6 +7,7 @@ namespace namesp {
 
     class tetraedr: public figure {
     public:
+        double function();
         void out(ofstream &ofstr);
         void in(ifstream &ifstr);
     private:
