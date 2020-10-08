@@ -13,10 +13,10 @@ namespace namesp {
         virtual double function() = 0;
         void outGlobal(ofstream &ofstr);
         static figure *inGlobal(ifstream &ifstr);
+        mType type; // Тип объекта
     private:
         int density;
         int temperatureOfMelting;
-        mType type; // Тип объекта
     };
 }
 
