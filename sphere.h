@@ -10,10 +10,10 @@ namespace namesp {
         double function();
         void out(ofstream &ofstr);
         void in(ifstream &ifstr);
+        int radius;
     private:
         double density;
         mType num_type; // Тип объекта
-        int radius;
     };
 }
 
