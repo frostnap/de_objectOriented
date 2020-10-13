@@ -2,8 +2,14 @@
 
 namespace namesp {
 
-    void parallelepiped::in(ifstream &ifstr) {
-        ifstr >> data_A >> data_B >> data_C;
+    bool parallelepiped::in(ifstream &ifstr) {
+        ifstr >> data_A;
+        if(ifstr.fail() || ifstr.bad()) return false;
+        ifstr >> data_B;
+        if(ifstr.fail() || ifstr.bad()) return false;
+        ifstr >> data_C;
+        if(ifstr.fail() || ifstr.bad()) return false;
         if (!ifstr.eof()) ifstr.get();
+        return true;
     }
 }

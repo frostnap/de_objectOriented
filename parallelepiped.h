@@ -8,7 +8,7 @@ namespace namesp {
     class parallelepiped: public figure {
     public:
         double function();
-        void in(ifstream &ifstr);
+        bool in(ifstream &ifstr);
         void out(ofstream &ofstr);
     private:
         double density;

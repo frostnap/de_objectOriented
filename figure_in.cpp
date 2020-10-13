@@ -28,7 +28,9 @@ namespace namesp {
             cout << "Error!" << endl;
             return nullptr;
         }
-        element->in(ifstr);
+        if(element->in(ifstr) == false) {
+            return nullptr;
+        }
         ifstr >> element->density;
         ifstr >> element->temperatureOfMelting;
         return element;

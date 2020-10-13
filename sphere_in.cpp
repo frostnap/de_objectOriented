@@ -4,9 +4,11 @@ using namespace std;
 
 namespace namesp {
 
-    void sphere::in(ifstream &ifstr){
+    bool sphere::in(ifstream &ifstr){
         ifstr >> radius;
+        if(ifstr.fail() || ifstr.bad()) return false;
         if (!ifstr.eof()) ifstr.get();
+        return true;
     }
 
 }

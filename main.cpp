@@ -22,6 +22,10 @@ int main(int argc, char* argv[]) {
     // Открытие потоков для чтения/записи
     ifstream ifst(argv[1]);
     ofstream ofst(argv[2]);
+    if(!ifst || !ofst) {
+        cout << "File not found!" << endl;
+        return 0;
+    }
     cout << "START"<< endl;
     // Объявление numbers_array
     namesp::container c;

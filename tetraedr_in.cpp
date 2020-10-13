@@ -4,9 +4,11 @@ using namespace std;
 
 namespace namesp {
 
-    void tetraedr::in(ifstream &ifstr){
+    bool tetraedr::in(ifstream &ifstr){
         ifstr >> length;
+        if(ifstr.fail() || ifstr.bad()) return false;
         if (!ifstr.eof()) ifstr.get();
+        return true;
     }
 
 }

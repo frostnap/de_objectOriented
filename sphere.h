@@ -9,7 +9,7 @@ namespace namesp {
     public:
         double function();
         void out(ofstream &ofstr);
-        void in(ifstream &ifstr);
+        bool in(ifstream &ifstr);
         int radius;
     private:
         double density;
