@@ -15,10 +15,10 @@ namespace namesp {
         int hashLinear(int index);
         int hashAdd(int typeKey);
         static const int MAXSIZE = 1024;
-        static const int q = 3; // Шаг поиска при коллизиях
+        static const int Q = 3; // Шаг поиска при коллизиях
+        element hash[MAXSIZE];
     private:
         int currentAmount = 0;
-        element hash[MAXSIZE];
     };
 }
 
