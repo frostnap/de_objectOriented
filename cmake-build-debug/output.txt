@@ -1,3 +1,25 @@
 Table index: 0. sphere: radius=2;
 Table index: 3. sphere: radius=2;
 Table index: 1. parallelepiped: A=1;B=2;C=3;
+Multimethod: 
+Sphere + Sphere
+sphere: radius=2;density=3;sphere: radius=2;density=3;
+Sphere + Sphere
+sphere: radius=2;density=1;sphere: radius=2;density=3;
+Sphere + Parallelepiped
+parallelepiped: A=1;B=2;C=3;density=4;sphere: radius=2;density=3;
+
+Sphere + Sphere
+sphere: radius=2;density=3;sphere: radius=2;density=1;
+Sphere + Sphere
+sphere: radius=2;density=1;sphere: radius=2;density=1;
+Sphere + Parallelepiped
+parallelepiped: A=1;B=2;C=3;density=4;sphere: radius=2;density=1;
+
+Parallelepiped + Sphere
+sphere: radius=2;density=3;parallelepiped: A=1;B=2;C=3;density=4;
+Parallelepiped + Sphere
+sphere: radius=2;density=1;parallelepiped: A=1;B=2;C=3;density=4;
+Parallelepiped + Parallelepiped
+parallelepiped: A=1;B=2;C=3;density=4;parallelepiped: A=1;B=2;C=3;density=4;
+

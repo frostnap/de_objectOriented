@@ -9,6 +9,8 @@ namespace namesp {
     public:
         void out(ofstream &ofstr);
         void in(ifstream &ifstr);
+        void multi(figure *fig, ofstream &ofstr);
+        void multi(ofstream &ofstr);
     private:
         double density;
         mType num_type; // Тип объекта

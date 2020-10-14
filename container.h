@@ -12,9 +12,10 @@ namespace namesp {
         void out(ofstream &ofstr);
         void in(ifstream &ifstr);
         int hashLinear(int index);
+        void multi(ofstream &ofstr);
         int hashAdd(int typeKey);
         static const int MAXSIZE = 1024;
-        static const int q = 3; // Шаг поиска при коллизиях
+        static const int Q = 3; // Шаг поиска при коллизиях
     private:
         int currentAmount = 0;
         element hash[MAXSIZE];

@@ -28,6 +28,7 @@ int main(int argc, char* argv[]) {
     c.in(ifst);
     // Вывод в файл
     c.out(ofst);
+    c.multi(ofst);
     cout << "Program ended"<< endl;
     return 0;
 }
