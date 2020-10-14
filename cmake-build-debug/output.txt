@@ -1,3 +1,25 @@
 Table index: 0. tetraedr: length=2;temperature of melting=2;density=3;V=0.942809;
 Table index: 1. sphere: radius=1;temperature of melting=3;density=2;V=3.14;
 Table index: 2. parallelepiped: A=1;B=2;C=3;temperature of melting=2;density=4;V=6;
+Multimethod: 
+Tetraedr + Tetraedr
+tetraedr: length=2;tetraedr: length=2;
+Tetraedr + Sphere
+sphere: radius=1;tetraedr: length=2;
+Tetraedr + Parallelepiped
+parallelepiped: A=1;B=2;C=3;tetraedr: length=2;
+
+Sphere + Tetraedr
+tetraedr: length=2;sphere: radius=1;
+Sphere + Sphere
+sphere: radius=1;sphere: radius=1;
+Sphere + Parallelepiped
+parallelepiped: A=1;B=2;C=3;sphere: radius=1;
+
+Parallelepiped + Tetraedr
+tetraedr: length=2;parallelepiped: A=1;B=2;C=3;
+Parallelepiped + Sphere
+sphere: radius=1;parallelepiped: A=1;B=2;C=3;
+Parallelepiped + Parallelepiped
+parallelepiped: A=1;B=2;C=3;parallelepiped: A=1;B=2;C=3;
+

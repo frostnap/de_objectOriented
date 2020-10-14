@@ -10,6 +10,8 @@ namespace namesp {
         int getKey();
         virtual void out(ofstream &ofstr) = 0;
         virtual bool in(ifstream &ifstr) = 0;
+        virtual void multi(figure* fig, ofstream &ofstr) = 0;
+        virtual void multi(ofstream &ofstr) = 0;
         virtual double function() = 0;
         void outGlobal(ofstream &ofstr);
         static figure *inGlobal(ifstream &ifstr);

@@ -7,4 +7,4 @@ add_executable(Lab2020 main.cpp container.h container_hashfunctions.cpp containe
         container_sort.cpp element.h figure.h figure_getkey.cpp figure_in.cpp figure_out.cpp mType.h
         parallelepiped.h parallelepiped_in.cpp parallelepiped_out.cpp parallelepiped_function.cpp
         sphere.h sphere_function.cpp sphere_out.cpp sphere_in.cpp tetraedr.h tetraedr_function.cpp tetraedr_out.cpp
-        tetraedr_in.cpp)
+        tetraedr_in.cpp container_multi.cpp parallelepiped_multi.cpp tetraedr_multi.cpp sphere_multi.cpp)

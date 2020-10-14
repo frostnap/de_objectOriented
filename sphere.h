@@ -10,6 +10,8 @@ namespace namesp {
         double function();
         void out(ofstream &ofstr);
         bool in(ifstream &ifstr);
+        void multi(figure* fig, ofstream &ofstr);
+        void multi(ofstream &ofstr);
         int radius;
     private:
         double density;

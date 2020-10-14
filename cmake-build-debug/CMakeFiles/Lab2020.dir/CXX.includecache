@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/y2g/CLionProjects/Lab2020/figure.h
+mType.h
+C:/Users/y2g/CLionProjects/Lab2020/mType.h
+fstream
+C:/Users/y2g/CLionProjects/Lab2020/fstream
+
+C:/Users/y2g/CLionProjects/Lab2020/mType.h
+
+C:/Users/y2g/CLionProjects/Lab2020/parallelepiped.h
+figure.h
+C:/Users/y2g/CLionProjects/Lab2020/figure.h
+
+C:/Users/y2g/CLionProjects/Lab2020/parallelepiped_multi.cpp
+parallelepiped.h
+C:/Users/y2g/CLionProjects/Lab2020/parallelepiped.h
+
+C:/Users/y2g/CLionProjects/Lab2020/sphere.h
+figure.h
+C:/Users/y2g/CLionProjects/Lab2020/figure.h
+
+C:/Users/y2g/CLionProjects/Lab2020/sphere_multi.cpp
+sphere.h
+C:/Users/y2g/CLionProjects/Lab2020/sphere.h
+
+C:/Users/y2g/CLionProjects/Lab2020/tetraedr.h
+figure.h
+C:/Users/y2g/CLionProjects/Lab2020/figure.h
+
+C:/Users/y2g/CLionProjects/Lab2020/tetraedr_multi.cpp
+tetraedr.h
+C:/Users/y2g/CLionProjects/Lab2020/tetraedr.h
+

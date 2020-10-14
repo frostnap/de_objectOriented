@@ -22,4 +22,5 @@ namespace namesp {
         if(!error)
             cout << "Successfully read!\n";
     }
+
 }

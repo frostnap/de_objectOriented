@@ -33,7 +33,8 @@ int main(int argc, char* argv[]) {
     c.in(ifst);
     c.sort();
     // Вывод в файл
-    c.out(ofst, namesp::mType::PARALLELEPIPED);
+    c.out(ofst);
+    c.multi(ofst);
     cout << "Program ended"<< endl;
     return 0;
 }

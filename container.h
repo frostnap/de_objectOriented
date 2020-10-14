@@ -11,6 +11,7 @@ namespace namesp {
     public:
         void out(ofstream &ofstr, mType ignore = mType::NONE);
         void in(ifstream &ifstr);
+        void multi(ofstream &ofstr);
         void sort();
         int hashLinear(int index);
         int hashAdd(int typeKey);
